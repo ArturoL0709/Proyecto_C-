@@ -12,7 +12,7 @@ Un jardín botanico tiene que llevar a cabo un registro acerca de los datos de s
 El programa consta de un menu con las opciones para saber los datos de cada una de las especies registradas.
 El programa puede almacenar y cambiar los datos de las plantas.
 
-# Funcionalidad 
+# Consideraciones
 
 El programa debe compilarse en g++ con las clases (flor_nube, flor_rosa, flor_girasol).
 
