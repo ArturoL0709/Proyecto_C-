@@ -1,0 +1,66 @@
+
+//Arturo López García
+//Proyecto jardín botanico
+//Pensamiento Computacional Orientado a Objetos 
+
+//Librerias 
+#include <iostream>
+#include <string>
+using namespace std;
+
+class flor_nube {
+    private: //atributos
+        std::string especie;
+        int edad;
+        float tamaño ;
+        
+       
+    public: //metodos 
+        flor_nube (string,int, float);//Constructor
+
+        void n_especie ();
+        void n_edad();
+        void n_tamaño ();
+        
+};
+//constructor (Inicializa los atributos)
+flor_nube::flor_nube (std::string _especie,int _edad, float _tamaño) {
+    especie = _especie;
+    edad = _edad;
+    tamaño= _tamaño;
+   
+}
+void flor_nube::n_especie(){
+    cout<<"El nombre de la especie es " <<especie<<"."<<endl;
+}
+void flor_nube::n_edad (){
+    cout<<"La edad de la flor es " <<edad<< "."<<endl;
+}
+void flor_nube::n_tamaño(){
+    cout<<"El tamaño de la flor es " <<tamaño<< " centimentros." <<endl;
+}
+
+
+
+int main(){
+    flor_nube flor_1 = flor_nube("Gypsophila paniculata",4, 100.31);
+    flor_1.n_especie();
+
+    flor_nube flor_2 = flor_nube ("Gypsophila paniculata",4, 100.31);
+    flor_2.n_edad ();
+
+    flor_nube flor_3 = flor_nube ("Gypsophila paniculata",4, 100.31);
+    flor_3.n_tamaño ( );
+
+
+    
+
+    
+
+    system("pause");
+    return 0;
+
+}
+
+
+
